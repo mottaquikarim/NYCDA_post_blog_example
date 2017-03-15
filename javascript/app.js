@@ -1,6 +1,6 @@
 (function() { // protect the lemmings!
 
-    const urlBase = 'http://staticblog-nycda.webscript.io/';
+    const urlBase = 'https://staticblog-nycda.webscript.io/';
 
     // ------------------ FEED PAGE VIEW --------------- //
     Routes.register('/feed', () => {
