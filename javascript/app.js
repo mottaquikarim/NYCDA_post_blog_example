@@ -15,12 +15,12 @@
         const container = document.querySelector('.js-todolist');
 
         ajax.GET(endpoint).then((data) => {
+            container.innerHTML = "";
             if (data.posts.length === 0) {
                 appendTo(container, renderEmptySet(), true);
                 return;
             }
 
-            container.innerHTML = "";
             for( const post of data.posts) {
                 const html = `
 <h1>
